@@ -1,0 +1,12 @@
+name: test 1
+run-name: ${{ github.base_ref }}
+on: [push]
+jobs:
+  apples:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🦞"
+  oranges:
+    runs-on: ubuntu-latest  
+    steps:
+      - run: ls ${{ github.workspace }}
