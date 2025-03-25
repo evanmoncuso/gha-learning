@@ -1,5 +1,5 @@
 name: Test
-run-name: ${{ github. }}
+run-name: ${{ github.event_name }}
 on: [push]
 jobs:
   Explore-GitHub-Actions:
