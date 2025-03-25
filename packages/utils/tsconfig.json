@@ -1,0 +1,32 @@
+{
+    // "extends": "@repo/typescript-config/base.json",
+    
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "importHelpers": false,
+        "noEmitHelpers": false,
+        "skipLibCheck": true,
+        "baseUrl": "./packages",
+        "paths": {
+            "@vercel/webpack-nft": [
+                "webpack-nmt/src/index.ts"
+            ]
+        },
+        "lib": [ "ES2015" ],
+        "outDir": "./dist",
+        "types": [
+            "jest",
+            "node"
+        ]
+    },
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+}

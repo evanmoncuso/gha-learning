@@ -1,0 +1,10 @@
+name: Test
+run-name: ${{ github.event_name }}
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - uses: pnpm/action-setup@v4
+      - run: pnpm test
